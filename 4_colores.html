@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="uno" 
+    style=" 
+    width: 200px;
+    height: 200px;
+    background-color: blue;"></div>
+    <div id="dos" 
+    style=" 
+    width: 200px;
+    height: 200px;
+    background-color: red;"></div>
+    <div id="tres" 
+    style="
+    width: 200px;
+    height: 200px;
+    background-color: green;"></div>
+    <div id="cuatro" 
+    style="
+    width: 200px;
+    height: 200px;
+    background-color:yellow;"></div>
+    
+    <script>
+
+        uno.addEventListener("click", function (){
+            cambiarColor(uno);
+        });
+        dos.addEventListener("click", function (){
+            cambiarColor(dos);
+        });
+        tres.addEventListener("click", function (){
+            cambiarColor(tres);
+        });
+        cuatro.addEventListener("click", function (){
+            cambiarColor(cuatro);
+        });
+
+    cambiarColor = function (element){
+            element.style.backgroundColor = "black";
+        };
+
+        uno = document.getElementById("uno");
+        dos = document.getElementById("dos");
+        tres = document.getElementById("tres");
+        cuatro = document.getElementsById("cuatro");
+    </script>
+</body>
+</html>
